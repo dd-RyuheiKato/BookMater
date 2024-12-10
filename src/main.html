@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mater</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], input[type="time"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Book Mater</h1>
+        <form>
+            <div class="form-group">
+                <label for="book-name">Book name</label>
+                <input type="text" id="book-name" name="book-name" placeholder="Enter book name" required>
+            </div>
+            <div class="form-group">
+                <label for="book-type">What kind of book</label>
+                <select id="book-type">
+                    <option value="Technical">Technical</option>
+                    <option value="Practical">Practical</option>
+                    <option value="Bussiness">Bussiness</option>
+                    <option value="Language">Language</option>
+                    <option value="Novel">Novel</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="how-much">How much you read</label>
+                <input type="number" id="how-much" name="how-much" placeholder="Enter amount" required>
+            </div>
+            <div class="form-group">
+                <label for="how-long">How long you spent</label>
+                <input type="number" id="how-long" name="how-long" placeholder="Enter duration in minutes" required>
+            </div>
+            <div class="form-group">
+                <label for="api-key">DD API key</label>
+                <input type="text" id="api-key" name="api-key" placeholder="Enter API key" required>
+            </div>
+            <div class="form-group">
+                <label for="dd-site">DD SITE</label>
+                <input type="text" id="dd-site" name="dd-site" placeholder="Enter DD SITE" required>
+            </div>
+            <button type="submit">Submit metrics</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
